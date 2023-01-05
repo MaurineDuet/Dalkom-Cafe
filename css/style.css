@@ -1,0 +1,159 @@
+/* Fonts */
+
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("../fonts/caviar_dreams/CaviarDreams.ttf");
+}
+
+@font-face {
+    font-family: "NotoSerifKR-SemiBold";
+    src: url("../fonts/Noto_Serif_KR/NotoSerifKR-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "NotoSerifKR-Light";
+    src: url("../fonts/Noto_Serif_KR/NotoSerifKR-Light.otf");
+}
+
+/* Body */
+
+body {
+    color: #121B1C;
+    background-color: #FFF8F1;
+    font-family: "CaviarDreams";
+
+}
+
+/* Général propore aux titres du chapire */
+
+/* Relation image et texte du titre */
+
+.chap_1_title_img {
+    position: absolute;
+
+}
+
+.chap_1_title_content {
+    position: relative;
+}
+
+/* Mise en page des textes du titre */
+
+.chap_titre {
+    font-size: 1.8em;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+
+}
+
+.chap_sous_titre {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 7px;
+    padding-left: 0px;
+    transform: translateX(30%);
+}
+
+
+
+/* Header */
+
+header {
+    background-image: url("../assets/Imagebackground.png");
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 120px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+/* ---- Introduction ---- */
+
+/* Introduction globale */
+
+.introduction {
+    padding: 60px 0;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Introduction texte du haut */
+
+.introduction p {
+    font-size: 1.2em;
+    letter-spacing: 5px;
+    align-self: center;
+}
+
+/* Introduction texte en coréen et barres */
+
+.introduction_sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+.introduction_korean {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.introduction_korean p {
+    font-size: 1.7em;
+    letter-spacing: 0px;
+    font-family: "NotoSerifKR-Light" ;
+
+    padding: 20px 50px;
+}
+
+
+
+
+/* ----- CHAPITRE 1 ----- */
+
+
+/* Chapitre 1 total */
+
+.chap_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Titre du chapitre 1 */
+
+.chap_1_title {
+    display: flex;
+    align-items: center;
+
+    padding: 130px 0;
+}
+
+
+/* Nuage du titre 1 */
+
+
+.chap_1_title_img img {
+    height: 250px;
+}
+
+.chap_1_title_content {
+    display: flex;
+    flex-direction: column;
+
+    transform: translate(250%, 72%);
+
+}
+

@@ -120,6 +120,7 @@ h3 {
     font-family: "NotoSerifKR-SemiBold";
     font-size: 3.2em;
     letter-spacing: 7px;
+    line-height: 70px;
 }
 
 
@@ -138,12 +139,13 @@ h3 {
 .chap_1_title {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 
 .chap_1_title img {
     position: relative;
-    margin-left: -250px;
+    right: 250px;
     height: 200px;
 }
 
@@ -160,6 +162,7 @@ h3 {
 /* Description du chapitre 1 */
 
 .chap_1_description {
+    position: relative;
     display: flex;
     justify-content: flex-end;
 }
@@ -168,7 +171,7 @@ h3 {
     position: relative;
     padding-top: 20px;
     height: 230px;
-    margin-right: -700px;
+    left: 700px;
 }
 
 .chap_1_description_content {
@@ -178,7 +181,9 @@ h3 {
 
     position: absolute;
     z-index: 1;
-    transform: translate(-80%, 130%);
+    left: 50%;
+    bottom: 40px;
+    /*transform: translate(-80%, 130%)*/;
 }
 
 /* Article du chapitre 1 */

@@ -24,6 +24,7 @@ body {
     font-family: "CaviarDreams";
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 main {
@@ -42,7 +43,7 @@ header {
     align-items: center;
 
     background-image: url("../assets/Imagebackground.png");
-    background-size: cover;
+    background-size: contain;
     height: 400px;
 }
 
@@ -100,7 +101,7 @@ header img {
 /* ----- CHAPITRES ----- */
 
 
-/* Général propore aux titres du chapire */
+/* Général propore aux chapires */
 
 h1 {
     font-size: 1.6em;
@@ -113,7 +114,6 @@ h2 {
     text-transform: uppercase;
     font-size: 0.9em;
     letter-spacing: 7px;
-    transform: translateX(30%);
 }
 
 h3 {
@@ -123,20 +123,60 @@ h3 {
     line-height: 70px;
 }
 
+a {
+    text-decoration: none;
+    color: #121B1C;
+}
 
-/* ----- CHAPITRE 1 ----- */
-
-/* Chapitre 1 total */
-
-.chap_1 {
+.chap {
     display: flex;
     flex-direction: column;
 }
 
+/* Titre du chapitre 
+
+.chap_1_title, .chap_2_title, .chap_3_title, .chap_4_title, .chap_5_title  {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.chap_1_title_content, .chap_2_title_content {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    z-index: 1;
+}
+
+*/
+
+
+/* Description du chapitre 
+
+.chap_1_description, .chap_2_description_item, .chap_5_description {
+    position: relative;
+    display: flex;
+}
+
+.chap_1_description_content, .chap_2_description_content, .chap_5_description_content {
+    font-size: 1.1em;
+    letter-spacing: 5px;
+    line-height: 130%;
+
+    position: absolute;
+    z-index: 1;
+}
+
+*/
+
+
+/* ----- CHAPITRE 1 ----- */
+
 
 /* Titre du chapitre 1 */
 
-.chap_1_title {
+.chap_1_title  {
     display: flex;
     align-items: center;
     position: relative;
@@ -150,21 +190,30 @@ h3 {
 }
 
 .chap_1_title_content {
-    position: absolute;
-    z-index: 1;
+    left: 400px;
+    bottom: 30px;
+
     display: flex;
     flex-direction: column;
 
-    transform: translate(200%, 60%);
+    position: absolute;
+    z-index: 1;
+
+    /*transform: translate(200%, 60%);*/
+}
+
+.chap_1_title_content h2 {
+    padding-left: 90px;
 }
 
 
 /* Description du chapitre 1 */
 
 .chap_1_description {
-    position: relative;
     display: flex;
     justify-content: flex-end;
+    position: relative;
+
 }
 
 .chap_1_description img {
@@ -175,14 +224,16 @@ h3 {
 }
 
 .chap_1_description_content {
-    font-size: 1.1em;
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    bottom: 50px;
+
+    font-size: 1em;
     letter-spacing: 5px;
     line-height: 130%;
 
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    bottom: 40px;
+
     /*transform: translate(-80%, 130%)*/;
 }
 
@@ -208,27 +259,356 @@ h3 {
 .chap_1_article_global {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+
+    position: relative;
 }
 
 .chap_1_article_global img {
-    padding-top: 50px;
     height: 100px;
-    transform: translateX(20%) ;
+
+    position: absolute;
+    left: 280px;
+    top: 35px;
+
+ /*transform: translateX(20%) ;*/
 }
 
 .chap_1_article {
     display: flex;
     flex-direction: column;
     gap: 50px;
+
     padding-left: 50px;
+    padding-top: 230px;
 }
 
 .chap_1_article_content {
     font-family: "NotoSerifKR-Light";
     letter-spacing: 3px;
     line-height: 25px;
+    font-size: 0.9em;
 
     padding-left: 30px;
     padding-right: 80px;
 }
+
+
+
+
+
+/* ----- CHAPITRE 2 ----- */
+
+.chap_2_background {
+    position: relative;
+    z-index: -2;
+}
+
+
+/* Titre du chapitre 2 */
+
+.chap_2_title  {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    background: linear-gradient(180deg, #FFF8F1 55%, #FFE9D8 55%) ;
+}
+
+
+.chap_2_title img {
+    position: relative;
+    left: 500px;
+    height: 350px;
+}
+
+.chap_2_title_content {
+    right: 250px;
+    bottom: 150px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    z-index: 1;
+
+}
+
+.chap_2_title_content h1 {
+    padding-left: 100px;
+}
+
+/* Description du chapitre 2 */
+
+.chap_2_article {
+    background-color:#FFE9D8;
+}
+
+.chap_2_description {
+    justify-content: flex-start;
+    gap: 150px;
+
+    position: relative;
+    display: flex;
+}
+
+
+.chap_2_description_item img {
+    position: relative;
+    height: 300px;
+    right: 600px;
+    bottom: 30px;
+}
+
+.chap_2_description_content {
+    padding: 0 80px;
+    right: 50%;
+    bottom: 200px;
+
+    font-size: 1em;
+    letter-spacing: 5px;
+    line-height: 130%;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.description_korean {
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    height: 300px;
+}
+
+
+/* Menu */
+
+
+.chap_2_menu {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.chap_2_menu img {
+    position: relative;
+    height: 200px;
+    top: 50px;
+}
+
+#small_clouds {
+    position: relative;
+    top: -50px;
+}
+
+#big_cloud {
+    position: relative;
+}
+
+
+.chap_2_menu p {
+    position: absolute;
+    right: 200px;
+    bottom: 0px;
+
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 10px 30px;
+
+    background-color: #FFF8F1;
+    border-radius: 50px;
+}
+
+/* Details */
+
+.chap_2_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 200px 0;
+}
+
+.chap_2_details_items {
+    display: flex;
+    padding: 0px 70px 150px 70px;
+    gap: 50px;
+}
+
+.chap_2_details_items p {
+    display: flex;
+    align-items: center;
+
+    padding: 50px;
+    width: 300px;
+
+    font-family: "NotoSerifKR-Light";
+    font-size: 0.9em;
+    letter-spacing: 3px;
+    line-height: 25px;
+
+    border: 1px solid #FF9086;
+}
+
+.chap_2_details_img {
+    display: flex;
+}
+
+.chap_2_details_img img {
+    width: 100%;
+}
+
+/* Chapitre 3 */
+
+/* Chapitre 3 intro et titre */
+
+
+.chap_3_intro {
+    padding-top: 70px;
+}
+
+.chap_3_intro img {
+    width: 100%;
+}
+
+.chap_3_title  {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.chap_3_title img {
+    position: relative;
+    right: 200px;
+    height: 300px;
+    bottom: 100px;
+}
+
+.chap_3_title_content {
+    left: 200px;
+    top: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    z-index: 1;
+
+    /*transform: translate(200%, 60%);*/
+}
+
+.chap_3_title_content h2 {
+    padding-left: 90px;
+}
+
+/* Chap 3 article */
+
+.chap_3_article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.chap_3_article p {
+    font-family: "NotoSerifKR-Light";
+    letter-spacing: 3px;
+    line-height: 25px;
+    font-size: 0.9em;
+    padding: 80px 0;
+
+    text-align: end;
+}
+
+.chap_3_img {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
+}
+
+.chap_3_img img {
+    width: 100%;
+}
+
+/* Chapitre 4 */
+
+/* Chapitre 4 intro et titre */
+
+.chap_4_title  {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.chap_4_title img {
+    position: relative;
+    left: 200px;
+    height: 250px;
+}
+
+.chap_4_title_content {
+    right: 150px;
+    bottom: 75px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    z-index: 1;
+
+}
+
+.chap_4_title_content h1 {
+    padding-left: 100px;
+}
+
+/* Chap 4 article */
+
+.chap_4_article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 100px 0;
+}
+
+.chap_4_article img {
+    height: 400px;
+}
+
+.chap_4_article_content {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px 0 0;
+    gap: 50px;
+}
+
+.chap_4_article_content p {
+    font-family: "NotoSerifKR-Light";
+    letter-spacing: 3px;
+    line-height: 25px;
+    font-size: 0.9em;
+}
+
+/* Chap 4 img */
+
+.chap_4_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 40px;
+    padding: 80px 0 150px 0;
+
+    border-top: 1px solid #7B7068;
+    border-bottom: 1px solid #7B7068;
+}
+
+.chap_4_img img {
+    height: 300px;
+}
+
+.chap_4_img_line_2 {
+    position: relative;
+    right: -250px;
+}
+
+

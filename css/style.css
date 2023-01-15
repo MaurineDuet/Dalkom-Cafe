@@ -68,9 +68,7 @@ header img {
 
 /* Introduction texte du haut */
 
-.introduction p {
-    font-size: 1.2em;
-    letter-spacing: 5px;
+.introduction h4 {
     align-self: center;
 }
 
@@ -89,15 +87,6 @@ header img {
 
     padding-top: 20px;
 }
-
-.introduction_korean p {
-    font-size: 1.5em;
-    letter-spacing: 0px;
-    font-family: "NotoSerifKR-Light" ;
-
-    padding: 10px 50px;
-}
-
 
 
 /* ----- CHAPITRES ----- */
@@ -123,6 +112,19 @@ h3 {
     font-size: 3.2em;
     letter-spacing: 7px;
     line-height: 70px;
+}
+
+h4 {
+    font-size: 1.2em;
+    letter-spacing: 5px;
+}
+
+h5 {
+    font-size: 1.5em;
+    letter-spacing: 0px;
+    font-family: "NotoSerifKR-Light" ;
+
+    padding: 10px 50px;
 }
 
 a {
@@ -485,6 +487,7 @@ a {
 .chap_3_title img {
     position: relative;
     height: 300px;
+    left: -30px;
     bottom: 100px;
 }
 
@@ -531,10 +534,22 @@ a {
     display: flex;
     flex-direction: column;
     padding: 20px 0 100px 0;
+
+    position: relative;
 }
 
 .chap_3_img img {
     width: 100%;
+}
+*
+.arrows {
+    position: absolute;
+    display: flex;
+}
+
+.arrows img {
+    height: 50px;
+    position: relative;
 }
 
 /* Chapitre 4 */
@@ -774,7 +789,7 @@ footer {
     padding-bottom: 40px;
     object-fit: contain;
     
-}
+} 
 
 
 

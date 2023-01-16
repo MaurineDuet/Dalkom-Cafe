@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" type="module" defer></script>
     <title>Dalkom Cafe</title>
 </head>
 
 <body>
 
     <header>
-        <img src="assets/Logo.png" alt="" href="index.html">
+        <a href="index.html"><img src="assets/Logo.png" alt=""></a>
     </header>
 
     <section class="introduction">
@@ -94,16 +95,18 @@
 
         </section>
 
-        <section class="chap">
+        <section class="chap_2">
 
-            <div class="chap_2_title">
+            <div class="chap_2_container">
+                <div class="chap_2_title">
 
-                <img src="assets/chap2/Chap 2 title background.svg" alt="">
-                <div class="chap_2_title_content">
-                    <h1>chapitre 2</h1>
-                    <h2>Passer commande</h2>
+                    <img src="assets/chap2/Chap 2 title background.svg" alt="">
+                    <div class="chap_2_title_content">
+                        <h1>chapitre 2</h1>
+                        <h2>Passer commande</h2>
+                    </div>
+
                 </div>
-
             </div>
 
             <article class="chap_2_article">
@@ -113,7 +116,8 @@
                     <div class="chap_2_description_item">
                         <img src="assets/chap2/chap 2 description background.svg" alt="">
                         <span class="chap_2_description_content"> Consultez le menu pour découvrir les différentes
-                            spécialités.</span>
+                            spécialités.
+                        </span>
                     </div>
 
                     <img src="assets/chap2/Description menu.png" alt="" class="description_korean">
@@ -183,16 +187,34 @@
 
             <div class="chap_3_img">
 
-                <div>
+                <div class="arrows">
 
-                    <div class="arrows">
-                        <img src="assets/chap3/chevron-left-solid.svg" alt="">
-                        <img src="assets/chap3/chevron-right-solid.svg" alt="">
-                    </div>
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="arrow_left">
+                        <g opacity="0.5">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M36.2796 43.1398C37.0932 42.3262 37.0932 41.0071 36.2796 40.1935L21.0861 25L36.2796 9.80647C37.0932 8.99288 37.0932 7.67378 36.2796 6.86019L34.8065 5.38705C33.9929 4.57346 32.6738 4.57346 31.8602 5.38705L14.457 22.7903C13.2366 24.0107 13.2366 25.9893 14.457 27.2097L31.8602 44.6129C32.6738 45.4265 33.9929 45.4265 34.8065 44.6129L36.2796 43.1398Z"
+                                fill="#121B1C" />
+                        </g>
+                    </svg>
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="arrow_right">
+                        <g opacity="0.5">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.0149 43.1398C14.2013 42.3262 14.2013 41.0071 15.0149 40.1935L30.2084 25L15.0149 9.80647C14.2013 8.99288 14.2013 7.67378 15.0149 6.86019L16.488 5.38705C17.3016 4.57346 18.6207 4.57346 19.4343 5.38705L36.8375 22.7903C38.0579 24.0107 38.0579 25.9893 36.8375 27.2097L19.4343 44.6129C18.6207 45.4265 17.3016 45.4265 16.488 44.6129L15.0149 43.1398Z"
+                                fill="#121B1C" />
+                        </g>
+                    </svg>
 
-                    <div>
-                        <img src="assets/chap3/Photo_cafe_1.jpg" alt="">
-                    </div>
+                </div>
+
+                <div class="chap_3_slider">
+
+                    <img class="active" src="assets/chap3/Photo_cafe_1.jpg" alt="" data-slider-img>
+                    <img src="assets/chap3/photo_cafe_2.jpg" alt="" data-slider-img>
+                    <img src="assets/chap3/photo_cafe_3.jpg" alt="" data-slider-img>
+                    <img src="assets/chap3/photo_cafe_4.jpg" alt="" data-slider-img>
+                    <img src="assets/chap3/photo_cafe_5.jpg" alt="" data-slider-img>
 
                 </div>
 

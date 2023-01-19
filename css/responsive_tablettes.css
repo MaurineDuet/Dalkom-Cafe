@@ -1,0 +1,357 @@
+/* PETITS ORDINATEURS ET TABLETTES */
+
+@media screen and (max-width:999px) {
+    
+    /* Global */
+    
+    .chap {
+        max-width: 700px;
+    }
+
+    /* ----- Introduction ----- */
+
+    /* Introduction texte en coréen et barres */
+
+    .introduction_sub img {
+        margin: -100px;
+    }
+
+        /* ----- CHAPITRES ----- */
+
+
+    /* Général propore aux chapires */
+
+    h1 {
+        font-size: 1.3em;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    h3 {
+        font-size: 2.2em;
+        line-height: 50px;
+    }
+
+    .introduction_sub p {
+        font-size: 1.4em;
+        padding: 10px 20px;
+    }
+
+    .chap_2_description_item p, .chap_1_description p, .chap_5_description_content {
+        font-size: 0.8em;
+    }
+
+    .chap_1_article p, .chap_2_details_items p, .chap_3_article p, .chap_4_article_content p {
+        font-size: 0.8em;
+        letter-spacing: 3px;
+        line-height: 22px;
+    }
+
+
+    /* ----- CHAPITRE 1 ----- */
+
+
+    /* Titre du chapitre 1 */
+
+    .chap_1_title img {
+        height: 150px;
+        right: 200px;
+    }
+
+    .chap_1_title_content {
+        left: 250px;
+        bottom: 25px;
+    }
+
+    /* Description du chapitre 1 */
+
+    .chap_1_description img {
+        height: 150px;
+        left: 480px;
+    }
+
+    .chap_1_description p {
+        left: 330px;
+        bottom: 20px;
+    }
+
+    /*Chap 1 Image principale */
+
+    .chap_1_main_img img {
+        height: 600px;
+    }
+
+    /*Chap 1 Article */
+
+    .chap_1_article_global img {
+        height: 70px;
+        left: 170px;
+        top: 35px;
+    }
+
+    .chap_1_article {
+        gap: 30px;
+        
+        padding-left: 40px;
+        padding-top: 150px;
+    }
+
+    .chap_1_article p {      
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+
+    /* ----- CHAPITRE 2 ----- */
+
+    /* Titre du chapitre 2 */
+
+
+    .chap_2_title  {
+        width: 700px;
+    }
+
+
+    .chap_2_title img {
+        left: 300px;
+        height: 250px;
+    }
+
+    .chap_2_title_content {
+        right: 100px;
+        bottom: 115px;
+    }
+
+    /* Description du chapitre 2 */
+
+    .chap_2_description {
+        width: 700px;
+    }
+
+    .chap_2_description_item img {
+        height: 200px;
+        right: 400px;
+    }
+
+    .chap_2_description_item p {
+        padding: 0 50px;
+        left: 20px;
+        bottom: 165px;
+    }
+
+    .description_korean {
+        right: 130px;
+        height: 200px;
+    }
+
+
+    /* Menu */
+
+    .chap_2_menu {
+        width: 700px;
+    }
+
+    .chap_2_menu img {
+        height: 150px;
+        top: 50px;
+    }
+
+    .chap_2_menu p {
+        right: 140px;
+        bottom: -20px;
+    }
+
+    /* Details */
+
+    .chap_2_details {
+        width: 700px;
+    }
+
+    .chap_2_details_items {
+        padding: 0px 30px 100px 30px;
+        gap: 10px;
+    }
+
+
+    .chap_2_details_items p {
+        padding: 30px;
+        width: 300px;
+    }
+
+    /* ---- CHAPITRE 3 ---- */
+
+    /* Chapitre 3 intro et titre */
+
+    .chap_3_intro_background {
+        height: 300px;
+    }
+
+    .chap_3_title img {
+        height: 220px;
+        left: -50px;
+        bottom: 70px;
+    }
+
+    .chap_3_title_content {
+        left: 100px;
+        top: 15px;
+    }
+
+    /* Chap 3 article */
+
+    .chap_3_article {
+        top: -50px;
+        right: 30px;
+        gap: 50px;
+    }
+
+    .chap_3_article p {
+        padding-left: 130px;
+    }
+
+    /* Chap 3 image */
+
+    .chap_3_img {
+        padding: 20px 0 80px 0;
+    }
+
+    .chap_3_slider img {
+        height: 400px;
+    }
+
+    .arrows {
+        height: 400px;
+    }
+
+    #arrow_right, #arrow_left {
+        height: 30px;
+        padding: 100px 0px;
+    }
+
+    #arrow_right {
+        left: 600px;
+    }
+
+    #arrow_left:hover {
+        padding: 185px 0;
+        padding-right: 10px;
+    }
+
+    #arrow_right:hover {
+        padding: 185px 10px;
+    }
+
+
+    /* ---- CHAPITRE ---- 4 */
+
+    /* Chapitre 4 intro et titre */
+
+    .chap_4_title img {
+        left: 120px;
+        height: 180px;
+    }
+
+    .chap_4_title_content {
+        right: 70px;
+        bottom: 50px; 
+    }
+
+    /* Chap 4 article */
+
+    .chap_4_article {
+        padding: 0px 0 100px 0;
+    }
+
+    .chap_4_article img {
+        height: 250px;
+    }
+
+    .chap_4_article_content {
+        gap: 30px;
+    }
+
+    /* Chap 4 img */
+
+    .chap_4_img {       
+        gap: 20px;
+        padding: 50px 0;
+    }
+
+    .chap_4_img img {
+        height: 220px;
+    }
+
+    .chap_4_img_line_2 {
+        right: -127px;
+    }
+
+
+    /* ---- CHAPITRE 5 ---- */
+
+
+    /* Chapitre 5 titre */
+
+    .chap_5_title {
+        padding-bottom: 100px;
+    }
+
+    .chap_5_title img {
+        right: 420px;
+        height: 180px;
+    }
+
+    .chap_5_title_content {
+        left: 100px;
+        bottom: 100px;
+    }
+
+    /* Chapitre 5 description */
+
+    .chap_5_description {
+        gap: 100px;
+    }
+
+    .chap_5_description_content img {
+        left: 30px;
+        width: 110%;
+    }
+
+    .chap_5_description_content p {
+        left: 80px;
+        bottom: 55px;
+        width: 370px;
+    }
+
+    .chap_5_clouds {
+        height: 80px;
+        bottom: 30px;
+    }
+
+    /* Chapitre 5 article */
+
+    .chap_5_article {      
+        padding: 30px 0 50px 0;
+    }
+
+    .chap_5_article img {
+        height: 600px;
+    }
+
+    .chap_5_article_content {       
+        padding: 70px;
+    }
+
+    .chap_5_article_content img {
+        top: 70px;
+        height: 140px;
+    }
+
+    /* ---- FOOTER ---- */
+
+    .footer_background {
+        height: 100%;     
+    }
+
+}

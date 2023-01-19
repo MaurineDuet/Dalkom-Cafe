@@ -1,0 +1,64 @@
+/* Chapitre 4 */
+
+/* Chapitre 4 intro et titre */
+
+
+.chap_4_title img {
+    left: 200px;
+    height: 250px;
+}
+
+.chap_4_title_content {
+    right: 150px;
+    bottom: 75px;
+}
+
+.chap_4_title_content h1 {
+    padding-left: 100px;
+}
+
+/* Chap 4 article */
+
+.chap_4_article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0 100px 0;
+}
+
+.chap_4_article img {
+    height: 400px;
+    position: relative;
+    left: -50px;
+}
+
+.chap_4_article_content {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px 0 0;
+    gap: 50px;
+}
+
+/* Chap 4 img */
+
+.chap_4_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 30px;
+    padding: 70px 0;
+    
+    border-top: 1px solid #7B7068;
+    border-bottom: 1px solid #7B7068;
+}
+
+.chap_4_img img {
+    height: 300px;
+}
+
+.chap_4_img_line_2 {
+    position: relative;
+    right: -197px;
+}
+

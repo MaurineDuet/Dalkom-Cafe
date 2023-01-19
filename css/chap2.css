@@ -1,0 +1,153 @@
+/* ----- CHAPITRE 2 ----- */
+
+/* Global */
+
+.chap_2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chap_2_container {
+    width: 100%;
+    background: linear-gradient(180deg, #FFF8F1 55%, #FFE9D8 55%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Titre du chapitre 2 */
+
+
+.chap_2_title  {
+    width: 1000px;
+}
+
+
+.chap_2_title img {
+    left: 400px;
+    height: 350px;
+}
+
+.chap_2_title_content {
+    right: 250px;
+    bottom: 150px;
+    
+    align-items: center;
+}
+
+.chap_2_title_content h1 {
+    padding-left: 100px;
+}
+
+/* Description du chapitre 2 */
+
+.chap_2_article {
+    background-color:#FFE9D8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.chap_2_description {
+    justify-content: flex-start;   
+    width: 1000px;  
+}
+
+
+.chap_2_description_item img {
+    position: relative;
+    height: 300px;
+    right: 700px;
+    bottom: 60px;
+}
+
+.chap_2_description_item p {
+    padding: 0 80px;
+    right: 50%;
+    bottom: 245px;
+}
+
+.description_korean {
+    position: absolute;
+    right: 250px;
+    height: 250px;
+}
+
+
+/* Menu */
+
+
+.chap_2_menu {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.chap_2_menu img {
+    position: relative;
+    height: 200px;
+    top: 50px;
+}
+
+#small_clouds {
+    position: relative;
+    top: -50px;
+}
+
+#big_cloud {
+    position: relative;
+}
+
+
+.chap_2_menu p {
+    position: absolute;
+    right: 250px;
+    bottom: 0px;
+    
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 10px 30px;
+    
+    background-color: #FFF8F1;
+    border-radius: 50px;
+}
+
+/* Details */
+
+.chap_2_details {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 1000px;
+}
+
+.chap_2_details_items {
+    display: flex;
+    padding: 0px 70px 100px 70px;
+    gap: 50px;
+}
+
+
+.chap_2_details_items p {
+    display: flex;
+    align-items: center;
+    
+    padding: 40px;
+    width: 300px;
+    
+    border: 1px solid #FF9086;
+}
+
+.chap_2_details_img {
+    display: flex;
+}
+
+.chap_2_details_img img {
+    width: 100%;
+}

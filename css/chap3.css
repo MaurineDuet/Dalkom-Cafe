@@ -1,0 +1,121 @@
+/* ---- CHAPITRE 3 ---- */
+
+/* Chapitre 3 intro et titre */
+
+
+.chap_3_intro {
+    padding-top: 50px;
+}
+
+.chap_3_intro_background {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.chap_3_title img {
+    height: 300px;
+    left: -30px;
+    bottom: 100px;
+}
+
+.chap_3_title_content {
+    left: 200px;
+    top: 20px;
+}
+
+.chap_3_title_content h2 {
+    padding-left: 90px;
+}
+
+/* Chap 3 article */
+
+.chap_3_article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    position: relative;
+    top: -90px;
+    right: 50px;
+    gap: 50px;
+}
+
+.chap_3_article p {  
+    text-align: end;
+}
+
+/* Chap 3 image */
+
+.chap_3_img {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 100px 0;
+    
+    position: relative;
+}
+
+.chap_3_img img {
+    width: 100%;
+}
+
+.chap_3_slider img {
+    display: none;
+    height: 550px;
+    object-fit: cover;
+}
+
+img.active {
+    display: block;
+    opacity: 1;
+    animation: fade 0.3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.9;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.arrows {
+    position: absolute;
+    display: flex;
+    height: 550px;
+    align-items: center;
+}
+
+#arrow_right, #arrow_left {
+    position: relative;
+}
+
+#arrow_right {
+    left: 900px;
+}
+
+#arrow_right:hover, #arrow_left:hover {
+    padding: 250px 0;
+    cursor: pointer;
+}
+
+#arrow_right:hover path, #arrow_left:hover path {
+    fill: #FFE9D8;
+}
+
+
+#arrow_right:hover {
+    background: linear-gradient(270deg, rgba(255, 248, 241, 0.3) 80%, transparent 100%);
+    padding-left: 10px;
+    margin-left: -10px;
+}
+
+#arrow_left:hover {
+    background: linear-gradient(90deg, rgba(255, 248, 241, 0.3) 80%, transparent 100%);
+    padding-right: 10px;
+    margin-right: -10px;
+}
+
+

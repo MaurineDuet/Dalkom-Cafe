@@ -1,0 +1,88 @@
+/* ----- CHAPITRE 1 ----- */
+
+
+/* Titre du chapitre 1 */
+
+.chap_1_title img {
+    right: 250px;
+    height: 200px;
+}
+
+.chap_1_title_content {
+    left: 400px;
+    bottom: 30px;
+}
+
+.chap_1_title_content h2 {
+    padding-left: 90px;
+}
+
+
+/* Description du chapitre 1 */
+
+.chap_1_description {
+    justify-content: flex-end;    
+}
+
+.chap_1_description img {
+    position: relative;
+    padding-top: 20px;
+    height: 230px;
+    left: 700px;
+}
+
+.chap_1_description p {
+    left: 400px;
+    bottom: 50px;
+    width: 300px;
+}
+
+/* Article du chapitre 1 */
+
+.chap_1_main {
+    display: flex;
+}
+
+/*Chap 1 Image principale */
+
+.chap_1_main_img {
+    transform: translateY(-7%) ;
+    z-index: -2;
+}
+
+.chap_1_main_img img {
+    height: 900px;
+}
+
+/*Chap 1 Article */
+
+.chap_1_article_global {
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+}
+
+.chap_1_article_global img {
+    height: 100px;
+    
+    position: absolute;
+    left: 220px;
+    top: 35px;
+    
+    /*transform: translateX(20%) ;*/
+}
+
+.chap_1_article {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+    padding-left: 50px;
+    padding-top: 230px;
+}
+
+.chap_1_article p {
+    padding-left: 30px;
+    padding-right: 50px;
+}

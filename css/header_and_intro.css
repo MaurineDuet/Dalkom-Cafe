@@ -1,0 +1,53 @@
+/* ----- Header ----- */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url("../assets/Imagebackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+header img {
+    height: 100px;
+}
+
+/* ----- Introduction ----- */
+
+/* Introduction globale */
+
+.introduction {
+    padding: 100px 0;
+    text-transform: uppercase;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Introduction texte du haut */
+
+.introduction h4 {
+    align-self: center;
+}
+
+/* Introduction texte en coréen et barres */
+
+.introduction_sub {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.introduction_korean {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-top: 20px;
+}

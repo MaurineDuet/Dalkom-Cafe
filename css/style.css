@@ -235,8 +235,9 @@ a {
     z-index: 1;
     left: 400px;
     bottom: 50px;
+    width: 300px;
     
-    font-size: 1em;
+    font-size: 0.9em;
     letter-spacing: 5px;
     line-height: 130%;
     
@@ -382,7 +383,7 @@ a {
 .chap_2_description_content {
     padding: 0 80px;
     right: 50%;
-    bottom: 240px;
+    bottom: 245px;
     
     font-size: 0.9em;
     letter-spacing: 5px;
@@ -766,7 +767,8 @@ img.active {
 
 .chap_5_description_content p {
     left: 120px;
-    bottom: 45px;
+    bottom: 50px;
+    width: 380px;
     
     display: flex;
     flex-direction: column;
@@ -911,6 +913,14 @@ footer a:hover {
         padding: 10px 20px;
     }
 
+    .chap_2_description_content, .chap_1_description_content, .chap_5_description_content {
+        font-size: 0.8em;
+    }
+
+    .chap_1_article_content, .chap_2_details_items p, .chap_3_article p, .chap_4_article_content p {
+        font-size: 0.8em;
+    }
+
 
     /* ----- CHAPITRE 1 ----- */
 
@@ -937,8 +947,6 @@ footer a:hover {
     .chap_1_description_content {
         left: 330px;
         bottom: 20px;
-        
-        font-size: 0.9em;
     }
 
     /*Chap 1 Image principale */
@@ -964,6 +972,7 @@ footer a:hover {
 
     .chap_1_article_content {
         line-height: 22px;
+        font-size: 0.8em;
         
         padding-left: 0px;
         padding-right: 20px;
@@ -1193,7 +1202,7 @@ footer a:hover {
 
     .chap_5_description_content p {
         left: 80px;
-        bottom: 45px;
+        bottom: 55px;
 
         width: 370px;
     }
@@ -1277,6 +1286,7 @@ footer a:hover {
 
     h3 {
         font-size: 2em;
+        letter-spacing: 3px;
     }
 
     h4 {
@@ -1292,6 +1302,17 @@ footer a:hover {
     .chap {       
         width: 350px;
     }
+
+    .chap_2_description_content, .chap_1_description_content, .chap_5_description_content {
+        font-size: 0.8em;
+    }
+
+    .chap_1_article_content, .chap_2_details_items p, .chap_3_article p, .chap_4_article_content p, .chap_5_article_content p {
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        line-height: 22px;
+    }
+
 
     /* ----- CHAPITRE 1 ----- */
 
@@ -1321,10 +1342,10 @@ footer a:hover {
 
     .chap_1_description_content {
         left: 50px;
+        width: 270px;
         bottom: 85px;
         padding: 0 10px;
         
-        font-size: 0.8em;
         letter-spacing: 4px;
     }
 
@@ -1360,14 +1381,11 @@ footer a:hover {
     .chap_1_article {
         gap: 30px;
         padding-top: 20px;
+        padding-bottom: 50px;
         padding-left: 55px;
     }
 
-    .chap_1_article_content {
-        letter-spacing: 2px;
-        line-height: 22px;
-        font-size: 0.8em;
-        
+    .chap_1_article_content {       
         padding-left: 0px;
         padding-right: 20px;
     }
@@ -1413,7 +1431,6 @@ footer a:hover {
         right: 0%;
         bottom: 95px;
         
-        font-size: 0.8em;
         letter-spacing: 4px;
     }
 
@@ -1438,13 +1455,13 @@ footer a:hover {
     }
 
     .chap_2_menu p {
-        right: 30px;
-        bottom: -30px;
+        right: 15px;
+        bottom: -25px;
 
         font-size: 1.5em;
         padding: 10px 20px;
         
-        background-color: #FF9086;
+        background-color: #FFF8F1;
         border-radius: 50px;
     }
 
@@ -1464,11 +1481,6 @@ footer a:hover {
     .chap_2_details_items p {       
         padding: 30px;
         width: 170px;
-        
-        font-size: 0.8em;
-        letter-spacing: 2px;
-        line-height: 22px;
-
     }
 
     .chap_2_details_img {
@@ -1476,6 +1488,192 @@ footer a:hover {
         flex-direction: column;
     }
 
+
+
+    /* ---- CHAPITRE 3 ---- */
+
+    /* Chapitre 3 intro et titre */
+
+    .chap_3_intro_background {
+        height: 250px;
+    }
+
+    .chap_3_title img {
+        height: 170px;
+    }
+
+    .chap_3_title_content {
+        left: 50px;
+        top: -5px;
+    }
+
+    .chap_3_title_content h2 {
+        padding-left: 40px;
+    }
+
+    /* Chap 3 article */
+
+    .chap_3_article {
+        top: -30px;
+        gap: 30px;
+    }
+
+    /* Chap 3 image */
+
+    .chap_3_slider img {
+        height: 220px;
+    }
+
+    .arrows {
+        height: 220px;
+    }
+
+    #arrow_right {
+        left: 250px;
+    }
+
+    #arrow_right:hover, #arrow_left:hover {
+        display: none;
+    }
+
+
+
+    /* Chapitre 4 */
+
+    /* Chapitre 4 intro et titre */
+
+    .chap_4_title img {
+        left: -50px;
+        height: 150px;
+    }
+
+    .chap_4_title_content {
+        right: 5px;
+        bottom: 45px; 
+    }
+
+    .chap_4_title_content h1 {
+        padding-left: 0px;
+    }
+
+    /* Chap 4 article */
+
+    .chap_4_article {
+        flex-direction: column;
+        padding: 0px 0 70px 0;
+    }
+
+    .chap_4_article img {
+        height: 100px;
+        top: 20px;
+        left: 110px;
+    }
+
+    .chap_4_article_content {
+        padding: 0px 50px 0 0;
+        gap: 30px;
+    }
+
+
+    /* Chap 4 img */
+
+    .chap_4_img img {
+        height: 350px;
+    }
+
+    .chap_4_img_line_2 {
+        right: 0px;
+    }
+
+    
+
+    /* ---- CHAPITRE 5 ---- */
+
+
+    /* Chapitre 5 titre */
+
+    .chap_5_title  {
+        padding-bottom: 0px;
+    }
+
+    .chap_5_title img {
+        right: 300px;
+        height: 150px;
+    }
+
+    .chap_5_title_content {
+        left: 50px;
+        bottom: -20px;
+    }
+
+    .chap_5_title_content h2 {
+        padding-left: 50px;
+    }
+
+    /* Chapitre 5 description */
+
+    .chap_5_description_content img {
+        width: 500px;
+        left: 0;
+        top: 70px;
+    }
+
+    .chap_5_description_content p {
+        left: 40px;
+        bottom: -20px;
+        width: 300px;
+        font-size: 1em;
+    }
+
+    .chap_5_clouds {
+        display: none;
+    }
+
+    /* Chapitre 5 article */
+
+    .chap_5_article {
+        flex-direction: column;
+    }
+
+    .chap_5_article img {
+        height: 400px;
+        width: 350px;
+        object-fit: cover;
+    }
+
+    .chap_5_article_content {       
+        padding: 70px 50px;
+        gap: 30px;
+    }
+
+    .chap_5_article_content img {
+        display: none;
+    }
+
+
+    /* ---- FOOTER ---- */
+
+    .footer_background {
+        width: 900px;    
+    }
+
+    .footer_content {
+        top: 150px;
+    }
+
+    .footer_content p, .footer_content a {
+        font-size: 0.8em;
+        padding: 20px 40px;
+    }
+
+    .footer_content img {
+        height: 70px;
+        padding-bottom: 35px;       
+    } 
+
+    footer a:hover {
+        display: none;
+    }
 
 
 

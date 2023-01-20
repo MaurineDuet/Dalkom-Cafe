@@ -72,6 +72,67 @@
         line-height: 22px;
     }
 
+    
+    /* ANIMATIONS */
+
+        
+    /* Titre */
+
+    .chap_1_title, .chap_2_title, .chap_3_title, .chap_4_title, .chap_5_title {
+        transform: translateX(150px);
+    }
+
+    .chap_1_title.active, .chap_2_title.active, .chap_3_title.active, .chap_4_title.active, .chap_5_title.active {
+        transform: translateX(0);
+    }
+
+    /* Description */
+
+    .chap_1_description, .chap_2_description_item, .chap_5_description_content {
+        transform: translateX(-150px);
+    }
+
+    .chap_1_description.active, .chap_2_description_item.active, .chap_5_description_content.active {
+        transform: translateX(0px);
+    }
+
+    /* Les images */
+
+    /* Carrés du chap 2 */
+
+    .chap_2_details_items {
+        transform: translateX(150px);
+    }
+
+    .chap_2_details_items.active {
+        transform: translateX(0);
+    }
+
+    /* Footer */
+
+    footer {
+        transform: translateY(150px);
+    }
+
+    footer.active {
+        transform: translateY(0);
+    }
+
+
+    /* Les SVG */
+
+    .chap_4_svg, .chap_1_svg {
+        transform: translateY(150px);
+        transition: all 1.5s ease;
+    }
+
+    .chap_4_svg.active, .chap_1_svg.active {
+        transform: translateY(0);
+    }
+
+    .chap_5_svg, .chap_2_svg {
+        transition: all 1.5s ease;
+    }
 
     /* ----- CHAPITRE 1 ----- */
 
@@ -425,7 +486,6 @@
     footer a:hover {
         display: none;
     }
-
 
 
 }

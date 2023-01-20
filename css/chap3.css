@@ -68,8 +68,7 @@
 
 img.active {
     display: block;
-    opacity: 1;
-    animation: fade 0.3s;
+    animation: fade 0.2s ease;
 }
 
 @keyframes fade {

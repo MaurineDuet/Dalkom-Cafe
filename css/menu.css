@@ -1,0 +1,139 @@
+/* Titre du menu */
+
+.menu_title {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+
+    padding: 80px 0 30px 0;
+}
+
+.menu_title.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.menu_title img {
+    right: 150px;
+    height: 300px;
+}
+
+.menu_title_content {
+    left: 120px;
+    bottom: 155px;
+}
+
+.menu_title_content h2 {
+    padding-left: 90px;
+}
+
+/* Contenu du menu */
+
+.menu_content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 200px 100px 200px;
+
+}
+
+.menu_content h5 {
+    font-family: "NotoSerifKR-SemiBold";
+    font-size: 1.5em;
+}
+
+.menu_content p {
+    font-family: "NotoSerifKR-Light";
+    letter-spacing: 3px;
+    line-height: 25px;
+    font-size: 0.9em;
+    padding: 25px 0;
+}
+
+.menu_content img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:999px) {
+
+    /* Titre du menu */
+
+    .menu_title img {
+        height: 250px;
+        right: 200px;
+    }
+
+    .menu_title_content {
+        left: 120px;
+        bottom: 140px;
+    }
+
+    /* Contenu du menu */
+
+    .menu_content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px 60px 70px 60px;
+
+    }
+
+    .menu_content p {
+        font-size: 0.8em;
+        letter-spacing: 3px;
+        line-height: 22px;
+    }
+
+}
+
+@media screen and (max-width:699px) {
+    
+    /* Titre du menu */
+
+    .menu_title {
+        transform: translateX(150px);
+    }
+
+    .menu_title.active {
+        transform: translateX(0);
+    }
+
+    .menu_title img {
+        right: 150px;
+        height: 220px;
+    }
+
+    .menu_title_content {
+        left: 30px;
+        bottom: 115px;
+    }
+
+    .menu_title_content h3 {
+        line-height: 18px;
+    }
+
+    /* Contenu du menu */
+
+    .menu_content {
+        gap: 40px;
+        padding: 30px 40px 80px 40px;
+
+    }
+
+    .menu_content h5 {
+        font-size: 1.2em;
+    }
+
+    .menu_content p {
+        letter-spacing: 2px;
+        line-height: 22px;
+        font-size: 0.8em;
+
+    }
+
+}

@@ -16,7 +16,7 @@
         margin: -100px;
     }
 
-        /* ----- CHAPITRES ----- */
+    /* ----- CHAPITRES ----- */
 
 
     /* Général propore aux chapires */
@@ -49,6 +49,36 @@
         letter-spacing: 3px;
         line-height: 22px;
     }
+
+    
+    /* ANIMATIONS */
+
+    /* Titre */
+
+    .chap_1_title, .chap_2_title, .chap_3_title, .chap_4_title, .chap_5_title {
+        transform: translateY(100px);
+    }
+
+    /* Description */
+
+    .chap_1_description, .chap_2_description_item, .chap_5_description_content {
+        transform: translateY(-100px);
+    }
+
+    /* Les images */
+
+    /* Carrés du chap 2 */
+
+    .chap_2_details_items, footer {
+        transform: translateY(100px);
+    }
+
+    /* Intro du chap 3 */
+
+    .chap_3_intro_background_container {
+        transform: translateY(-100px);
+    }
+
 
 
     /* ----- CHAPITRE 1 ----- */

@@ -88,17 +88,17 @@ a {
 
 /* Les titres */
 
-.chap_1_title, .chap_2_title, .chap_3_title, .chap_4_title, .chap_5_title  {
+.chap_1_title, .chap_2_title, .chap_3_title, .chap_4_title, .chap_5_title, .menu_title  {
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.chap_1_title img, .chap_2_title img, .chap_3_title img, .chap_4_title img, .chap_5_title img {
+.chap_1_title img, .chap_2_title img, .chap_3_title img, .chap_4_title img, .chap_5_title img, .menu_title img {
     position: relative;
 }
 
-.chap_1_title_content, .chap_2_title_content, .chap_3_title_content, .chap_4_title_content, .chap_5_title_content {  
+.chap_1_title_content, .chap_2_title_content, .chap_3_title_content, .chap_4_title_content, .chap_5_title_content, .menu_title_content {  
     display: flex;
     flex-direction: column;
     
@@ -224,7 +224,7 @@ a {
 .chap_4_svg, .chap_1_svg {
     transform: translateX(150px);
     opacity: 0;
-    transition: all 2s linear;
+    transition: all 1.5s ease;
 }
 
 .chap_4_svg.active, .chap_1_svg.active {
@@ -235,7 +235,7 @@ a {
 .chap_5_svg, .chap_2_svg {
     transform: translateX(-150px);
     opacity: 0;
-    transition: all 1.5s linear;
+    transition: all 1.5s ease;
 }
 
 .chap_5_svg.active, .chap_2_svg.active {

@@ -5,6 +5,8 @@ const previous = document.querySelector("#arrow_left")
 
 let count = 0
 
+if(items) {
+
 function nextSlide() {
     items[count].classList.remove("active")
 
@@ -17,7 +19,11 @@ function nextSlide() {
     items[count].classList.add("active")
 }
 
+if(next) {
+
 next.addEventListener("click", nextSlide)
+
+}
 
 function previousSlide() {
     items[count].classList.remove("active")
@@ -31,7 +37,11 @@ function previousSlide() {
     items[count].classList.add("active")
 }
 
+if(previous) {
+
 previous.addEventListener("click", previousSlide)
+
+}
 
 function keyPress(e){
 
@@ -44,3 +54,4 @@ function keyPress(e){
 
 document.addEventListener("keydown", keyPress)
 
+}

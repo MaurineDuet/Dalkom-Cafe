@@ -38,27 +38,27 @@ main {
 
 /* Général propore aux chapires */
 
-h1 {
+h2 {
     font-size: 1.6em;
     letter-spacing: 5px;
     padding-bottom: 20px;
     
 }
 
-h2 {
+h3 {
     text-transform: uppercase;
     font-size: 0.9em;
     letter-spacing: 7px;
 }
 
-h3 {
+h4 {
     font-family: "NotoSerifKR-SemiBold";
     font-size: 3.2em;
     letter-spacing: 7px;
     line-height: 70px;
 }
 
-h4 {
+h1 {
     font-size: 1.2em;
     letter-spacing: 5px;
 }
@@ -131,5 +131,117 @@ a {
     line-height: 25px;
     font-size: 0.9em;
 }
+
+
+/* ANIMATIONS */
+
+/* Titre */
+
+.chap_1_title, .chap_2_title, .chap_3_title, .chap_4_title, .chap_5_title {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.chap_1_title.active, .chap_2_title.active, .chap_3_title.active, .chap_4_title.active, .chap_5_title.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Description */
+
+.chap_1_description, .chap_2_description_item, .chap_5_description_content {
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: all 2s ease; 
+}
+
+.chap_1_description.active, .chap_2_description_item.active, .chap_5_description_content.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Les images */
+
+/* Carrés du chap 2 */
+
+.chap_2_details_items, footer {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.chap_2_details_items.active, footer.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Intro du chap 3 */
+
+.chap_3_intro_background_container {
+    opacity: 0;
+    position: relative;
+    transform: translateY(-150px);
+    transition: all 2s ease;
+}
+
+.chap_3_intro_background_container.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Images de food du chap 4 */
+
+.chap_4_img_line_1, .chap_4_img_line_3 {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.chap_4_img_line_1.active, .chap_4_img_line_3.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.chap_4_img_line_2 {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.chap_4_img_line_2.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Les SVG */
+
+.chap_4_svg, .chap_1_svg {
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 2s linear;
+}
+
+.chap_4_svg.active, .chap_1_svg.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.chap_5_svg, .chap_2_svg {
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 1.5s linear;
+}
+
+.chap_5_svg.active, .chap_2_svg.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 

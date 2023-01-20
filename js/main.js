@@ -1,46 +1,19 @@
-const items = document.querySelectorAll("[data-slider-img]")
-const nbSlide = items.length
-const next = document.querySelector("#arrow_right")
-const previous = document.querySelector("#arrow_left")
+import "./slider.js"
 
-let count = 0
+window.addEventListener("scroll", reveal)
 
-function nextSlide() {
-    items[count].classList.remove("active")
+function reveal() {
+    let reveals = document.querySelectorAll("[reveal-fade]")
 
-    if(count < nbSlide - 1) {
-        count++
-    } else {
-        count= 0
-    }
+    for(let i = 0; i < reveals.length; i++) {
+        let windowheight = window.innerHeight
+        let revealTop = reveals[i].getBoundingClientRect().top
+        let revealPoint = 150
 
-    items[count].classList.add("active")
-}
-
-next.addEventListener("click", nextSlide)
-
-function previousSlide() {
-    items[count].classList.remove("active")
-
-    if(count > 0) {
-        count--;
-    } else {
-        count= nbSlide - 1;
-    }
-
-    items[count].classList.add("active")
-}
-
-previous.addEventListener("click", previousSlide)
-
-function keyPress(e){
-
-    if(e.keyCode === 37){
-        previousSlide()
-    } else if(e.keyCode === 39){
-        nextSlide()
+        if(revealTop < windowheight - revealPoint) {
+            reveals[i].classList.add("active")
+        } else {
+            reveals[i].classList.remove("active")
+        }
     }
 }
-
-document.addEventListener("keydown", keyPress)
-

@@ -21,16 +21,16 @@
 
     /* Général propore aux chapires */
 
-    h1 {
+    h2 {
         font-size: 1.3em;
         padding-bottom: 10px;
     }
 
-    h2 {
+    h3 {
         font-size: 0.8em;
     }
 
-    h3 {
+    h4 {
         font-size: 2.2em;
         line-height: 50px;
     }
@@ -136,9 +136,10 @@
     }
 
     .chap_2_description_item p {
-        padding: 0 50px;
+        width: 300px;
+        padding: 0 20px;
         left: 20px;
-        bottom: 165px;
+        bottom: 180px;
     }
 
     .description_korean {

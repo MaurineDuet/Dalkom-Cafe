@@ -23,7 +23,6 @@
     width: 1000px;
 }
 
-
 .chap_2_title img {
     left: 400px;
     height: 350px;
@@ -36,7 +35,7 @@
     align-items: center;
 }
 
-.chap_2_title_content h1 {
+.chap_2_title_content h2 {
     padding-left: 100px;
 }
 
@@ -52,7 +51,7 @@
 
 .chap_2_description {
     justify-content: flex-start;   
-    width: 1000px;  
+    width: 1000px;
 }
 
 
@@ -64,9 +63,10 @@
 }
 
 .chap_2_description_item p {
-    padding: 0 80px;
-    right: 50%;
-    bottom: 245px;
+    width: 400px;
+    padding: 0;
+    left: 70px;
+    bottom: 242px;
 }
 
 .description_korean {

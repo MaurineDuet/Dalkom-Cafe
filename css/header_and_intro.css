@@ -14,6 +14,17 @@ header {
 
 header img {
     height: 100px;
+    -webkit-animation: fading 3s;
+    animation: fading 3s;
+}
+
+@keyframes fading {
+    0% {opacity: 0;
+    transform: translateY(100%);
+    }
+    100% {opacity: 1;
+    transform: translateY(0%)
+    }
 }
 
 /* ----- Introduction ----- */
@@ -31,7 +42,7 @@ header img {
 
 /* Introduction texte du haut */
 
-.introduction h4 {
+.introduction h1 {
     align-self: center;
 }
 
